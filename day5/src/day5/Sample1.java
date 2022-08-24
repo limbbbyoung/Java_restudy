@@ -47,6 +47,13 @@ class HouseDog extends Dog {
 	// 생성자 오버로딩 
 	// 메소드에 오버로딩이 있는 것과 마찬가지로 생성자에도 오버로딩이 있다.
 	// * 하나의 클래스에 여러개의 입력항목이 다른 생성자를 만들 수 있다.
+	HouseDog(int type){
+		if(type==1) {
+			this.setName("yorkshire");
+		} else if (type==2) {
+			this.setName("bulldog");
+		}
+	}
 	
 	void sleep(int hour) {
 		System.out.println(this.name + " zzz in house for " + hour + " hours");
